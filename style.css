@@ -1,9 +1,15 @@
+:root {
+	--bg-black: black;
+	--bg-white: #dfdfdf;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
+
 
 body {
 	background: black;
@@ -13,23 +19,309 @@ h1 {
 	font-size: 4vw;
 }
 
+li {
+	height: 100vh;
+	display: flex;
+}
+
+li:nth-child(odd) {
+	background-color: var(--bg-black);
+	color: var(--bg-white);
+}
+
+li:nth-child(even) {
+	background-color: var(--bg-white);
+	color: var(--bg-black);
+}
+
+li:last-child {
+	height: auto;
+}
+
+li > div {
+	width: 100vw;
+}
+
 div.title {
-	background-color: black;
 	color: whitesmoke;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	font-family: "Playfair Display", serif;
-	height: 100vh;
+	font-family: "playfair display", serif;
 }
 
+img#logo {
+	width: 35vw;
+}
+
+
+/*book a flight*/
 div.book-a-flight {
-	background-color: white;
-	color: black;
 	display: flex;
-	height: 100vh;
 }
 
-div.book-a-flight>table{
+div.caption {
+	padding: 7vw;
+	width: 50%;
+}
+
+div.caption > h1 {
+	margin-bottom: 10vh;
+}
+
+div.caption > p {
+	padding-right: 8vw;
+	font-size: 1.25vw;
+}
+
+div.caption > a {
+	margin-top: 10vh;
+}
+
+a > button {
+	margin-top: 10vh;
+	font-size: 2vw;
+	border-radius: 64px;
+	padding: 5%;
+}
+
+a > button:hover {
+	background-color: var(--bg-black);
+	color: var(--bg-white);
+	cursor: pointer;
+}
+
+div.carousel {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	overflow-x: hidden;
+}
+
+div.carousel > img {
+	width: 80%;
+	object-fit: contain;
+	display: none;
+	border-radius: 10px;
+}
+
+div.carousel > a {
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 3vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+/*become a member*/
+div.become-a-member {
+
+}
+
+/*about us*/
+div.about-us {
+	display: flex;
+	align-items: center;
+}
+
+div.about-us > div.img {
+	width: 50%;
+	padding: 1vw;
+}
+
+div.img > img {
 	width: 100%;
 }
+
+/*Footer*/
+div.footer {
+	padding: 5vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+div.footer > h1 {
+	margin-bottom: 4vw;
+	font-size: 3vw;
+}
+
+div.footer > img {
+	width: 15%;
+}
+
+div.footer > div {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	height: 100%;
+}
+
+div.footer > div > p {
+	margin-bottom: 2vw;
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+	body {
+		background: black;
+	}
+
+	h1 {
+		font-size: 6vh;
+		white-space: break-spaces;
+		text-align: center;
+	}
+
+	li {
+		height: 50vh;
+		display: flex;
+	}
+
+	li:nth-child(odd) {
+		background-color: var(--bg-black);
+		color: var(--bg-white);
+	}
+
+	li:nth-child(even) {
+		background-color: var(--bg-white);
+		color: var(--bg-black);
+	}
+
+	li:nth-child(2) {
+		height: auto;
+	}
+
+	li:nth-child(3) {
+		height: auto;
+	}
+
+	li:nth-child(4) {
+		height: auto;
+	}
+
+	li > div {
+		width: 100vw;
+	}
+
+	div.title {
+		color: whitesmoke;
+		display: flex;
+		flex-direction: column;
+		font-family: "playfair display", serif;
+		justify-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+
+	img#logo {
+		width: 30vh;
+	}
+
+	/*book a flight*/
+	div.book-a-flight {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	div.caption {
+		padding: 7vw;
+		width: 100vw;
+	}
+
+	div.caption > h1 {
+		font-size: 5vh;
+		margin-bottom: 6vh;
+	}
+
+	div.caption > p {
+		padding-right: 8vw;
+		font-size: 1.25vh;
+	}
+
+	div.caption > a {
+		margin-top: 5vh;
+	}
+
+	a > button {
+		margin-top: 5vh;
+		font-size: 3vw;
+		border-radius: 64px;
+		padding: 5%;
+		width: 100%;
+	}
+
+	a > button:hover {
+		background-color: var(--bg-black);
+		color: var(--bg-white);
+		cursor: pointer;
+	}
+
+	div.carousel {
+		display: flex;
+		align-items: center;
+		overflow-x: hidden;
+		width: 100vw;
+		justify-content: center;
+		margin-top: 2vh;
+	}
+
+	div.carousel > img {
+		width: 80%;
+		object-fit: contain;
+		display: none;
+		border-radius: 10px;
+	}
+
+	div.carousel > a {
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 3vw;
+		padding-left: 2vw;
+		padding-right: 2vw;
+	}
+
+	/*about us*/
+	div.about-us {
+		display: flex;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+
+	div.about-us > div.img {
+		width: 100%;
+		padding: 0;
+	}
+
+	div.img > img {
+		width: 100%;
+		height: 100%;
+	}
+	
+	/*Footer*/
+	div.footer {
+		padding: 2vh;
+	}
+
+	div.footer > h1 {
+		font-size: 4vh;
+		margin-bottom: 4vh;
+	}
+	
+	div.footer > img {
+		display: none;
+	}
+
+	div.footer > div {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	div.footer > p {
+		font-size: 2vh;
+		margin-bottom: 2vh;
+	}
+}
+

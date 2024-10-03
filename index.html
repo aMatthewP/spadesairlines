@@ -8,31 +8,80 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+
+		<script src="script.js"></script>
 	</head>
 	<body>
-		<div class="title">
-			<img src="img/LogoWhite.png" alt="logo" width="30%">
-			<h1>S P A D E S &nbsp;&nbsp;&nbsp;A I R L I N E S</h1>
-			<p>The only way to travel in luxury</p>
-		</div>
-		<div class="book-a-flight">
-			<table>
-				<tr>
-					<td>Economy</td>
-					<td>100$</td>
-					<td>Book Now</td>
-				</tr>
-				<tr>
-					<td>Business</td>
-					<td>150$</td>
-					<td>Book Now</td>
-				</tr>
-				<tr>
-					<td>First Class</td>
-					<td>200$</td>
-					<td>Book Now</td>
-				</tr>
-			</table>
-		</div>
+		<ul class="main">
+			<li>
+				<div class="title">
+					<img src="img/LogoWhite.png" alt="logo" id="logo">
+					<h1>SPADES AIRLINES</h1>
+					<p>The only way to travel in luxury</p>
+				</div>
+			</li>
+			<li>
+				<div class="book-a-flight">
+					<div class="caption">
+						<h1>Destinations</h1>
+						<p>
+							Spades Airlines is the ultimate destination for aviation enthusiasts. 
+							Our airline offers a unique destinations for everyone to enjoy their love for travelling, culture, 
+							and participate in exciting exotic journeys . 
+							Join us and be a part of a vibrant community dedicated to all things travel and luxury.
+						</p>
+						<a href="https://www.example.com">
+							<button>
+								Book a flight
+							</button>
+						</a>
+					</div>
+					<div class="carousel">
+							<a onclick="ImageCarouselPrevious()">❮</a>
+							<img src="img/destinations/france.jpg" alt="France" id="img-1">
+							<img src="img/destinations/Japan.jpg" alt="Japan" id="img-2">
+							<a onclick="ImageCarouselNext()">❯</a>
+					</div>
+				</div>
+			</li>
+			<!-- <li> -->
+			<!-- 	<div class="become-a-member"> -->
+			<!---->
+			<!-- 	</div> -->
+			<!-- </li> -->
+			<li>
+				<div class="about-us">
+					<div class="caption">
+						<h1>About Us</h1>
+						<p>
+							Spades Airlines is a premium airline that caters to passengers who want the best in comfort and style. 
+							The fleet consists of modern, sleek aircraft with a gorgeous livery that exudes luxury and class. 
+							Spades Airlines focuses on excellent service, ensuring that every detail is meticulously
+							personalized to produce an unforgettable travel experience that goes beyond ordinary luxury.
+						</p>
+					</div>
+					<div class="img">
+						<img src="img/Plane.png" alt="A Plane">
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="footer">
+					<h1>Spades Airlines</h1>
+					<img src="img/LogoBlack.png" alt="Logo">
+					<div>
+						<p>
+							spadesairlines@gmail.com <br>
+						</p>
+						<p>
+							+63-995-788-3765 <br>
+						</p>
+						<p>
+							124 Conch Street, Bikini Bottom, Pacific Ocean
+						</p>
+					</div>
+				</div>
+			</li>
+		</ul>
 	</body>
 </html>
