@@ -368,6 +368,10 @@ div.footer > div > p {
 		margin-bottom: 10vh;
 	}
 
+	div.mission-vision > .mission > p {
+		font-size: 2vh;
+	}
+
 	div.mission-vision > .vision {
 		width: 100%;
 		display: flex;
@@ -378,6 +382,10 @@ div.footer > div > p {
 
 	div.mission-vision > .vision > h1 {
 		margin-bottom: 10vh;
+	}
+	
+	div.mission-vision > .vision > p {
+		font-size: 2vh;
 	}
 	
 	/*Footer*/
