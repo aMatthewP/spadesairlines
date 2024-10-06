@@ -113,11 +113,6 @@ div.carousel > a {
 	padding-right: 2vw;
 }
 
-/*become a member*/
-div.become-a-member {
-
-}
-
 /*about us*/
 div.about-us {
 	display: flex;
@@ -151,6 +146,10 @@ div.mission-vision > .mission > h1 {
 	margin-bottom: 10vh;
 }
 
+div.mission-vision > .mission > p {
+	font-size: 1.5vw;
+}
+
 div.mission-vision > .vision {
 	width: 50%;
 	display: flex;
@@ -161,6 +160,10 @@ div.mission-vision > .vision {
 
 div.mission-vision > .vision > h1 {
 	margin-bottom: 10vh;
+}
+
+div.mission-vision > .vision > p {
+	font-size: 1.5vw;
 }
 
 /*Footer*/
