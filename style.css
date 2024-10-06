@@ -133,6 +133,36 @@ div.img > img {
 	width: 100%;
 }
 
+/*Mission Vision*/
+
+div.mission-vision {
+	display: flex;
+}
+
+div.mission-vision > .mission {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 7vw;
+}
+
+div.mission-vision > .mission > h1 {
+	margin-bottom: 10vh;
+}
+
+div.mission-vision > .vision {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 7vw;
+}
+
+div.mission-vision > .vision > h1 {
+	margin-bottom: 10vh;
+}
+
 /*Footer*/
 div.footer {
 	padding: 5vw;
@@ -196,7 +226,7 @@ div.footer > div > p {
 		height: 100vh;
 	}
 
-	li:nth-child(4) {
+	li:nth-child(5) {
 		height: auto;
 	}
 
@@ -237,7 +267,8 @@ div.footer > div > p {
 
 	div.caption > p {
 		padding-right: 8vw;
-		font-size: 1.25vh;
+		font-size: 2vh;
+		text-align: justify;
 	}
 
 	div.caption > a {
@@ -313,6 +344,37 @@ div.footer > div > p {
 	div.about-us > div.caption > p {
 		font-size: 2vh;
 		text-align: justify;
+	}
+
+	/*Mission Vision*/
+	div.mission-vision {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	div.mission-vision > .mission {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 7vw;
+	}
+
+	div.mission-vision > .mission > h1 {
+		margin-bottom: 10vh;
+	}
+
+	div.mission-vision > .vision {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 7vw;
+	}
+
+	div.mission-vision > .vision > h1 {
+		margin-bottom: 10vh;
 	}
 	
 	/*Footer*/
